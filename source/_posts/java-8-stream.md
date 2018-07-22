@@ -14,28 +14,23 @@ java 8 中增加很多的新的特性：lambda,stream,函数式编程,新的api�
 lambda表达式，函数式标称。其实在之前java也是有支持的，但是并不是那么友好，举个栗子：
 <p>java 8之前的版本</p>
 <pre>
-	<code>
 		Runnable a = new Runnable() {
             @Override
             public void run() {
             		doSomeThing();
             }
         };
-	</code>
 </pre>
 这个是定义接口，重写没有实现的方法，java8中增加了@FunctionalInterface,这样的接口就可以直接使用lambda表达式。
 <p>java8中的lambda写法：</p>
 <pre>
-	<code>
 		Runnable run = () -> doSomeThing();
-	</code>
 </pre>
 这样，是不是看着很简洁，在了解java8 之前，我很烦java的语法，很冗长，比较喜欢python、golang、js的语法，很简洁。		
 lambda表达式各式如下：		
 **格式**		
 <p></p>
 <pre>
-	<code>
 		// 无参数,直接用()
 		() -> {}
 		// 一个参数，直接指定，不需要带括号
@@ -50,7 +45,6 @@ lambda表达式各式如下：
 			// 根据接口方法定义的，是否有返回结果
 			return someThing;
 		}
-	</code>
 </pre>
 **注意**		
 1.函数内部调用外部变量，会默认将外部变量设置为final，所以被调用的外部变量一定不能重新覆盖。	
