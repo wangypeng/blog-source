@@ -15,9 +15,9 @@ java中线程之间通信的线程安全问题，已经是老生常谈了，有�
 java中实现：通过底层计算机的CAS原理，java层面，通过自旋当时方式实现，当前值和预期不一样的时候，采用自旋的方式，直到compare成功，set值，但是这种方式，会占用大量cpu时间，jvm也做了优化，在自旋时降低cpu使用率，在自旋的时候jvm会pause,减低cpu使用率。
 
 
-在自学的过程中，发现，其实java代码，比较简洁，最底层是JNDI的方法，也是多方查找，总算找到了，更低层，实现CAS的原理，下面将详细介绍：		
-1. java中Atomic源码，以AtomicIntger的addAndGet为例			
+在自学的过程中，发现，其实java代码，比较简洁，最底层是JNDI的方法，也是多方查找，总算找到了，更低层，实现CAS的原理，下面将详细介绍：	
 	
+java中Atomic源码，以AtomicIntger的addAndGet为例			
 AtomicInteger包中的addAndGet
 <pre>
 public final int addAndGet(int delta) {
