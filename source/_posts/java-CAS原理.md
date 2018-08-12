@@ -1,7 +1,9 @@
 ---
 title: java CAS原理
 date: 2018-07-22 15:39:37
-tags:
+type: "categories"
+categories: jvm
+tags: jvm
 ---
 
 

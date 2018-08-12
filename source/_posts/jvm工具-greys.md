@@ -1,7 +1,9 @@
 ---
 title: jvm工具-greys
 date: 2018-07-14 10:21:22
-tags:
+type: "categories"
+categories: jvm
+tags: jvm
 ---
 
 
