@@ -24,13 +24,13 @@ java中实现：通过底层计算机的CAS原理，java层面，通过自旋当
 	
 java中Atomic源码，以AtomicIntger的addAndGet为例			
 AtomicInteger包中的addAndGet
-<pre>
+{% codeblock %}
 public final int addAndGet(int delta) {
     return unsafe.getAndAddInt(this, valueOffset, delta) + delta;
 }
-</pre>
-Unsafe包中getAndAddInt
-<pre>
+{% endcodeblock %}
+Unsfe包中getAndAddInt
+{% codeblock lang:java %}
 public final int getAndAddInt(Object var1, long var2, int var4) {
     int var5;
     do {
@@ -38,11 +38,11 @@ public final int getAndAddInt(Object var1, long var2, int var4) {
     } while(!this.compareAndSwapInt(var1, var2, var5, var5 + var4));
     return var5;
 }
-</pre>
-<pre>
+{% endcodeblock %}
+{% codeblock %}
 public final native boolean compareAndSwapInt(Object var1, long var2, 
 int var4, int var5);
-</pre>
+{% endcodeblock %}
 在代码中，能看到在java语言方面，是通过自旋的方式，一直循环，直到**compareAndSwapInt**为true为true的时候返回。	其实最重要是**compareAndSwapInt**这个方法，又干了些什么那，继续谈论。		
 
 其实再底层，就是物理机上做的原子操作，也就是硬件做的优化：	

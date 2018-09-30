@@ -42,7 +42,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace:
   
 # Home page setting
@@ -90,3 +90,4 @@ search:
   field: post
   format: html
   limit: 10000
+
