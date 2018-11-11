@@ -5,6 +5,12 @@ type: "categories"
 categories: 设计模式
 tags: 设计模式
 ---
+![](img/index-page-img/设计模式.png)
+
+代理设计模式，代理目标，代替直接操作目标对象。
+
+<!-- more -->
+
 
 ### 介绍
 

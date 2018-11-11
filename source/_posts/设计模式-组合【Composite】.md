@@ -6,6 +6,11 @@ categories: 设计模式
 tags: 设计模式
 ---
 
+![](img/index-page-img/设计模式.png)
+
+组合状态模式，递归组合目标数据结构。
+
+<!-- more -->
 
 ### 介绍
 

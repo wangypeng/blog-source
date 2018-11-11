@@ -6,6 +6,12 @@ categories: jvm
 tags: jvm
 ---
 
+![](img/index-page-img/java.png)
+
+CAS 深入理解。
+
+<!-- more -->
+
 
 ### 线程安全问题引发的思考
 

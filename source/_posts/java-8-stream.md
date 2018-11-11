@@ -7,6 +7,11 @@ comments: true
 tags: java8
 ---
 
+![](img/index-page-img/java.png)
+
+CAS 深入理解。
+
+<!-- more -->
 
 ### java 8
 
