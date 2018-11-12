@@ -130,4 +130,4 @@ public class EmailValidator implements ConstraintValidator<ValidEmail, String> {
 
 
 #### 源码地址:
-https://github.com/wangypeng/spring-boot-validator
+<a>https://github.com/wangypeng/spring-boot-validator</a>
