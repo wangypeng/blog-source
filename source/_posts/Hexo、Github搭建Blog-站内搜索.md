@@ -1,10 +1,14 @@
 ---
 title: Hexo、Github搭建Blog--站内搜索
-date: 2018-06-04 22:45:51
+date: 2018-03-04 22:45:51
 type: "categories"
 categories: blog
 tags: blog
 ---
+
+![](img/index-page-img/blog.jpg)
+
+<!-- more -->
 
 
 ### 安装

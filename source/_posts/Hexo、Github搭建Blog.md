@@ -1,11 +1,15 @@
 ---
 title: Hexo、Github搭建Blog
-date: 2018-06-03 15:56:25
+date: 2018-03-10 15:56:25
 type: "categories"
 categories: blog
 comments: true
 tags: blog
 ---
+
+![](img/index-page-img/blog.jpg)
+
+<!-- more -->
 
 
 ### 选择github和hexo搭建blog的原因
